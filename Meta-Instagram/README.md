@@ -34,7 +34,7 @@ Outbound message dynamically appends below the incoming message timeline block.
 Outbound message node visually bypasses the incoming node, displaying out of chronological order.
 
 <figure>
-  <img src="./evidence1.png" alt="Instagram Mobile Application Expected Chronological State" />
+  <img src="./evidence1.jpg" alt="Instagram Mobile Application Expected Chronological State" />
   <figcaption><i>Figure 1: Mobile parity baseline verifying expected behavior. The mobile UI correctly renders the concurrent real-time exchange in perfect chronological order, confirming the backend database sequencing is correct and isolating the failure strictly to the desktop web client.</i></figcaption>
 </figure>
 
