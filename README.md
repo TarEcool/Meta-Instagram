@@ -34,18 +34,18 @@ Outbound message dynamically appends below the incoming message timeline block.
 Outbound message node visually bypasses the incoming node, displaying out of chronological order.
 
 <figure>
-  <img src="./evidence1.jpg" alt="Instagram Mobile Application Expected Chronological State" />
+  <img src="./Meta-Instagram/evidence1.jpg" alt="Instagram Mobile Application Expected Chronological State" />
   <figcaption><i>Figure 1: Mobile parity baseline verifying expected behavior. The mobile UI correctly renders the concurrent real-time exchange in perfect chronological order, confirming the backend database sequencing is correct and isolating the failure strictly to the desktop web client.</i></figcaption>
 </figure>
 
 <figure>
-  <img src="./evidence2.png" alt="Instagram Desktop Web UI Chronological Inversion Defect" />
+  <img src="./Meta-Instagram/evidence2.png" alt="Instagram Desktop Web UI Chronological Inversion Defect" />
   <figcaption><i>Figure 2: Active defect state captured on the desktop web client. Immediately following a real-time incoming payload from the mobile user, the web client's outbound response dynamically appends above the incoming message container, breaking sequential text flow and violating chronological layout logic.</i></figcaption>
 </figure>
 
 <figure>
-  <img src="./evidence3.png" alt="Instagram Desktop Web Post-Refresh State Correction" />
-  <figcaption><i>Figure 3: Post-refresh state alignment. Forcing a hard browser refresh triggers a fresh server-side data pull, restoring the correct chronological order. This confirms that database state-persistence is functioning perfectly, validating that the bug is entirely constrained to the client-side real-time DOM-injection layer.</i></figcaption>
+  <img src="./Meta-Instagram/evidence3.png" alt="Instagram Desktop Web Post-Refresh State Correction" />
+  <figcaption><i>Figure 3: Post-refresh state alignment. Forcing a hard browser refresh triggers a fresh server-side data pull, restores the correct chronological order. This confirms that database state-persistence is functioning perfectly, validating that the bug is entirely constrained to the client-side real-time DOM-injection layer.</i></figcaption>
 </figure>
 
 ---
